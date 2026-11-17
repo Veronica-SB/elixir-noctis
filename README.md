@@ -1,4 +1,4 @@
-\# Elixir Noctis
+# Elixir Noctis
 
 
 
@@ -10,59 +10,59 @@ Los donantes humanos registran sus donaciones, un equipo de transportistas se en
 
 
 
-\## Stack
+## Stack
 
 
 
-\- \*\*Backend:\*\* Java + Spring Boot, con Spring Security para la autenticación y los permisos
+- **Backend:** Java + Spring Boot, con Spring Security para la autenticación y los permisos
 
-\- \*\*Base de datos:\*\* PostgreSQL
+- **Base de datos:** PostgreSQL
 
-\- \*\*Frontend:\*\* Next.js + TypeScript
+- **Frontend:** Next.js + TypeScript
 
-\- \*\*Infraestructura:\*\* Docker
-
-
-
-\## Funcionalidades
+- **Infraestructura:** Docker
 
 
 
-\*\*Cuatro roles con permisos diferenciados\*\*
-
-\- \*Admin:\* asigna transportistas, revisa las donaciones entrantes y consulta un panel de estadísticas
-
-\- \*Donante:\* registra donaciones y sigue su estado y sus valoraciones
-
-\- \*Transportista:\* gestiona recogidas y entregas
-
-\- \*Cliente:\* compra en el catálogo, con carrito persistente, y valora sus pedidos
+## Funcionalidades
 
 
 
-\*\*Lógica de negocio\*\*
+**Cuatro roles con permisos diferenciados**
 
-\- Recorrido completo de la donación y del pedido mediante máquinas de estados
+- *Admin:* asigna transportistas, revisa las donaciones entrantes y consulta un panel de estadísticas
 
-\- Caducidad automática de las bolsas, con rebaja de precio los días previos
+- *Donante:* registra donaciones y sigue su estado y sus valoraciones
 
-\- Precio calculado a partir del grupo sanguíneo, la reputación del donante, sus características y la frescura de la bolsa
+- *Transportista:* gestiona recogidas y entregas
 
-\- Sistema de valoraciones que alimenta la reputación de donantes y transportistas
-
-\- Baja de usuarios con anonimización de datos personales
+- *Cliente:* compra en el catálogo, con carrito persistente, y valora sus pedidos
 
 
 
-\## Cómo ejecutarlo
+**Lógica de negocio**
+
+- Recorrido completo de la donación y del pedido mediante máquinas de estados
+
+- Caducidad automática de las bolsas, con rebaja de precio los días previos
+
+- Precio calculado a partir del grupo sanguíneo, la reputación del donante, sus características y la frescura de la bolsa
+
+- Sistema de valoraciones que alimenta la reputación de donantes y transportistas
+
+- Baja de usuarios con anonimización de datos personales
 
 
 
-\*\*Requisitos:\*\* Docker
+## Cómo ejecutarlo
 
 
 
-1\. Clona el repositorio y entra en la carpeta:
+**Requisitos:** Docker
+
+
+
+1. Clona el repositorio y entra en la carpeta:
 
 
 
@@ -76,7 +76,7 @@ cd elixir-noctis
 
 
 
-2\. Copia el archivo de variables de entorno y rellena la contraseña:
+2. Copia el archivo de variables de entorno y rellena la contraseña:
 
 
 
@@ -88,7 +88,7 @@ cp .env.example .env
 
 
 
-3\. Levanta la base de datos:
+3. Levanta la base de datos:
 
 
 
@@ -100,11 +100,11 @@ docker compose up -d
 
 
 
-4\. Ejecuta `esquema.sql` sobre la base de datos `elixir\_noctis` para crear las tablas.
+4. Ejecuta `esquema.sql` sobre la base de datos `elixir_noctis` para crear las tablas.
 
 
 
-\## Estado del proyecto
+## Estado del proyecto
 
 
 
@@ -112,5 +112,5 @@ En desarrollo. Actualmente están terminados el diseño funcional, el modelo de 
 
 
 
-\*\*Siguientes pasos:\*\* API REST con Spring Boot, autenticación con Spring Security e interfaz en Next.js.
+**Siguientes pasos:** API REST con Spring Boot, autenticación con Spring Security e interfaz en Next.js.
 
